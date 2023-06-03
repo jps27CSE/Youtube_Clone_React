@@ -29,14 +29,16 @@ const Feed = () => {
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
+
         <Typography
           className="copyright"
           variant="body2"
           sx={{ mt: 1.5, color: "#fff" }}
         >
-          Copyright © {year} Jack Pritom Soren
+          Copyright © {year} JPS
         </Typography>
       </Box>
+
       <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
         <Typography
           variant="h4"
@@ -46,6 +48,7 @@ const Feed = () => {
         >
           {selectedCategory} <span style={{ color: "#FC1503" }}>videos</span>
         </Typography>
+
         <Videos videos={videos} />
       </Box>
     </Stack>
